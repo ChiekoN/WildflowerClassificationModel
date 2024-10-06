@@ -79,7 +79,7 @@ In the test, those 4 models predicted the test data, and accuracy was calculated
 
 ![Test Accuracies](readme_images/test_accuracies_season2.jpg "Test Accuracies")
 
-I obviously saw that any level of fine-tuning made the performance of the model better than the pre fine-tuned model. And basically, the deeper it was fine-tuned, the better it performed. It is consistent with what I saw in training.
+I saw that any level of fine-tuning made the performance of the model better than the pre fine-tuned model. And basically, the deeper it was fine-tuned, the better it performed. It is consistent with what I saw in training.
 
 The interesting thing is the model with 5 inception modules to be fine-tuned became the best one in terms of accuracy, not the one fine-tuned with full layers. I got a question of whether it really reflects the effect of the depth of fine-tuning, or the difference rather came from the randomness of parameters such as initial weights?
 
@@ -179,16 +179,16 @@ I tested 27 photos of wildflowers I took in the past. All of those flowers are o
 
 I show some of the examples of the result from **Model B**. The leftmost column is the target image(my photo). The second one is the top 1 detection(the class that was detected to be most likely). The next one is the top 2, the rightmost column is the top 3 detection. (The whole result is in `readme_images/myimages_modelA_s2.jpg` and `readme_images/myimages_modelB_s2.jpg`.)
 
-##### Example of correct detections with the highest probability
+##### Examples where the correct class was detected with the highest probability
 Looks quite nice!
 
 ![Test with my images Top 1](readme_images/myimages_modelB_s2_top1.jpg "Test with my images Top 1")
 
-##### Example of detections within top-3
+##### Examples where the correct class was detected within top-3
 Still seems to work.
 ![Test with my images Top 3](readme_images/myimages_modelB_s2_top3.jpg "Test with my images Top 3")
 
-##### Example of detections out of top-3
+##### Examples where no correct class was detected within top-3
 ![Test with my images fail](readme_images/myimages_modelB_s2_fail.jpg "Test with my images fail")
 
 ## Conclusion
