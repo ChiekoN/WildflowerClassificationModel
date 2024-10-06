@@ -1,7 +1,7 @@
 # Australian Wildflower Classification Model
 
 ## Overview
-I trained a Deep Neural Network Model which classifies images of 108 Australian Wild Flowers by using transfer learning method. The base model I used is InceptionV3, to which some combination of fully connected layers and the output layer tailored for this classification task are attached.
+I trained a Deep Neural Network Model which classifies images of 108 Australian wildflowers by using transfer learning method. The base model I used is InceptionV3, to which some combination of fully connected layers and the output layer tailored for this classification task are attached.
 
 After simple transfer-learning, I performed fine-tuning so the model further adapts to this task. In fine-tuning step, I examined some variations of how many inception blocks to be fine-tuned and compared them.
 
